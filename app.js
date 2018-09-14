@@ -19,5 +19,17 @@ const checkPalindrome = (str) => {
 checkPalindrome('racecar');
 checkPalindrome('hello');
 
+const sumDigits = (num) => {
+    const numString = String(num);
+    const digits = numString.split('');
+    let total = 0;
+    for (let i = 0; i < digits.length; i++){
+        total +=(Number(digits[i]));
+    }
+    return total;
+}
+
+console.log(sumDigits(42));
+
 
 

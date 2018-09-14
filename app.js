@@ -31,5 +31,11 @@ const sumDigits = (num) => {
 
 console.log(sumDigits(42));
 
+const calculateSide = (sideA, sideB) => {
+    const cSquared = Math.pow(sideA, 2) + Math.pow(sideB, 2);
+    const sideC = Math.sqrt(cSquared);
+    return sideC;
+}
+console.log(calculateSide(3,4));
 
 
